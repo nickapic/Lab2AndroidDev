@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">AndroidLab2</string>
+    <string name="app_name">NewAndroidLab2</string>
+    <string name="EnterText">Please Enter the text you want counted</string>
+    <string name="Run">Run</string>
+    <string-array name="choices">
+        <item>Words</item>
+        <item>Characters</item>
+    </string-array>
 </resources>

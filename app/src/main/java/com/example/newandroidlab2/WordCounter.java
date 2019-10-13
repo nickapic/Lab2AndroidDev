@@ -1,12 +1,13 @@
 package com.example.newandroidlab2;
 
 
-import android.widget.Toast;
-
 public class WordCounter {
 
+    private void TextView(String string) {
+        MainActivity m =new MainActivity();
 
-    public void charCounter(String stringToCount) {
+    }
+    public int charCounter(String stringToCount) {
        // String stringToCount = "The best of both worlds";
         int count = 0;
 
@@ -15,9 +16,23 @@ public class WordCounter {
             if(stringToCount.charAt(i) != ' ')
                 count++;
         }
+        return count;
 
-        //Displays the total number of characters present in the given string
-       // Toast.makeText(parent.getContext(),text,Toast.LENGTH_SHORT).show();
     }
+        // Displays the total number of characters present in the given string
+       // Toast.makeText(parent.getContext(),text,Toast.LENGTH_SHORT).show();
+
+    public int wordCounter (String stringToCount){
+        int count = 0 ;
+
+        for (int i = 0 ; i<stringToCount.length();i++){
+            int cur = stringToCount.charAt(i);
+            if( cur == ' ' || cur == '.' || cur ==',' ){
+                count++;
+            }
+        }
+    return count;
+    }
+
 }
 

@@ -20,9 +20,9 @@ public class WordCounterUnitTest {
     }
     @Test
     public void wordCounter_isCorrect() {
-        final String givenString ="yo,dude";
+        final String givenString ="yo dude";
         final int expectedResult = 2;
-        final int actualResult = WordCounter.charCounter(givenString);
+        final int actualResult = WordCounter.wordCounter(givenString);
         assertEquals(expectedResult, actualResult);
     }
 }
